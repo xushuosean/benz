@@ -9,7 +9,7 @@
             src="https://xushuosean.github.io/benz/img/pic1.a7d1d48e.png"
             :preview-src-list="srcList">
           </el-image>
-          <img src="../assets/pic1.png" alt="">
+          <img src="../assets/pic1.png" alt="" style="display: none">
           <el-audio audioLink="../assets/hello.m4a">
             <div class="audiobox">
               录音
