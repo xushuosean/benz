@@ -10,7 +10,7 @@
             src="https://xushuosean.github.io/benz/img/pic1.a7d1d48e.png"
             :preview-src-list="srcList">
           </el-image>
-          <el-audio audioLink="http://sc1.111ttt.cn/2017/1/05/09/298092035545.mp3">
+          <el-audio audioLink="../assets/hello.m4a">
             <div class="audiobox">
               录音
             </div>
