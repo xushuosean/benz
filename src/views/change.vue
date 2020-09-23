@@ -34,7 +34,7 @@ export default {
       from: '来自运营总监杜子夫的邮件',
       textarea: '',
       srcList: [
-        'https://xushuosean.github.io/benz/img/pic1.a7d1d48e.png'
+        '../assets/pic1.png'
       ]
     }
   },
