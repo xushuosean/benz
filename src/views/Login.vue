@@ -36,8 +36,8 @@ export default {
   data () {
     return {
       form: {
-        name: '',
-        password: ''
+        name: 'guest',
+        password: 'guest'
       }
     }
   },
@@ -57,11 +57,14 @@ export default {
   height: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   .centerTitle {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    // justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
     .title {
       font-size: 26px;
     }
@@ -83,12 +86,11 @@ export default {
   }
 }
 .content {
-  width: 100%;
+  width: 1200px;
   position : absolute;
   top : 100px;
   bottom : 0px;
-  left : 0px;
-  background: url("../assets/backimg.jpg") no-repeat center center;
+  background: url("../assets/backimg.png") no-repeat center center;
   background-size:cover;
   background-attachment:fixed;
   background-color:#CCCCCC;
@@ -99,6 +101,10 @@ export default {
     width: 400px;
     /deep/ .el-form {
       text-align: center;
+      .el-form-item__label {
+        font-weight: bold;
+        color: black;
+      }
     }
   }
 }
@@ -106,7 +112,7 @@ export default {
 .corner {
   position: absolute;
   bottom: 50px;
-  left: 50px;
+  margin-left: 50px;
   text-align: left;
   color: black;
   font-weight: bold;

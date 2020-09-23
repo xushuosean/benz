@@ -12,7 +12,7 @@
           <li>请关闭您计算机上打开的其他所有程序。</li>
           <li>若要开始，请单击开始。</li>
         </ol>
-        <el-button @click="start">开始</el-button>
+        <el-button type="primary" @click="start">开始</el-button>
       </div>
       <div class="right">
         <div class="video">
@@ -67,13 +67,11 @@ export default {
 <style lang="scss" scoped>
 .orientation {
   color: white;
-  width: 100%;
+  width: 1200px;
   position : absolute;
   top : 64px;
   bottom : 0px;
-  left : 0px;
   background-color: black;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -99,6 +97,9 @@ export default {
     align-items: center;
     .left {
       width: 400px;
+      .el-button {
+        margin-top: 40px;
+      }
     }
     .right {
       width: 400px;

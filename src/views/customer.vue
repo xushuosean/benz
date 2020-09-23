@@ -37,8 +37,7 @@ export default {
   },
   methods: {
     enterClick () {
-      this.$refs.audio.play()
-      // this.$router.push('/home/final')
+      this.$router.push('/home/final')
     }
   }
 }

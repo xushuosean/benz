@@ -11,9 +11,9 @@
       <video-player class="video-player vjs-custom-skin"
         ref="videoPlayer"
         :playsinline="true"
-        :options="playerOptions"
-        @ended="onPlayerEnded($event)">
+        :options="playerOptions">
       </video-player>
+      <el-button type="primary" @click="next">下一步</el-button>
     </div>
   </div>
 </template>
@@ -50,7 +50,7 @@ export default {
     this.$emit('startProgree')
   },
   methods: {
-    onPlayerEnded () {
+    next () {
       this.$router.push('/home/change')
     }
   }
@@ -60,11 +60,10 @@ export default {
 <style lang="scss" scoped>
 .backMsg {
   color: white;
-  width: 100%;
+  width: 1200px;
   position : absolute;
   top : 64px;
   bottom : 0px;
-  left : 0px;
   background-color: black;
   display: flex;
   flex-direction: row;
@@ -75,6 +74,9 @@ export default {
   }
   .video {
     width: 400px;
+    .el-button {
+      margin-top: 40px;
+    }
   }
 }
 </style>

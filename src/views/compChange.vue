@@ -14,9 +14,9 @@
         type="textarea"
         :rows="10"
         placeholder="请输入内容"
-        v-model="textarea"
-        @keydown.enter.native="enterDown">
+        v-model="textarea">
       </el-input>
+      <el-button type="primary" @click="enterDown">下一步</el-button>
     </div>
   </div>
 </template>
@@ -46,7 +46,6 @@ export default {
   },
   methods: {
     enterDown () {
-      console.log('down')
       this.$emit('enterDown')
     }
   }
@@ -56,11 +55,10 @@ export default {
 <style lang="scss" scoped>
 .compChange {
   color: white;
-  width: 100%;
+  width: 1200px;
   position : absolute;
   top : 64px;
   bottom : 0px;
-  left : 0px;
   background-color: black;
   display: flex;
   flex-direction: row;
@@ -77,11 +75,16 @@ export default {
     padding: 20px 0 0 20px;
   }
   .sendBox {
-    height: 60%;
     width: 400px;
-    align-self: center;
     background: gray;
     padding: 30px;
+    text-align: right;
+    h2 {
+      text-align: left;
+    }
+    /deep/ .el-button {
+      margin-top: 40px;
+    }
   }
 }
 </style>

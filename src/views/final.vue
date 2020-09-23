@@ -10,7 +10,7 @@
           <p>您已经完成全面测评。</p>
           <p>请点击<b>完成</b>按钮退出。</p>
         </div>
-        <el-button>完成</el-button>
+        <el-button type="primary">完成</el-button>
       </div>
     </div>
   </div>
@@ -26,9 +26,8 @@ export default {
 .final {
   position: absolute;
   top: 64px;
-  left: 0px;
   bottom: 0px;
-  width: 100%;
+  width: 1200px;
   background: black;
   color: white;
   display: flex;

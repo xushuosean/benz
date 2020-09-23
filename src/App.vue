@@ -10,6 +10,8 @@
 
 <style lang="scss">
 #app {
+  width: 1200px;
+  margin: 0 auto;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,7 +21,6 @@
 
 #nav {
   padding: 30px;
-
   a {
     font-weight: bold;
     color: white;

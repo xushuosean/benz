@@ -34,10 +34,13 @@ export default {
   methods: {
     start () {
       clearInterval(this.timer)
-      let allTime = 30 * 60
+      let allTime = 15 * 60
       const constTime = allTime
       this.timer = setInterval(() => {
         const time = allTime--
+        if (time <= 0) {
+          clearInterval(this.timer)
+        }
         if (time % 10 === 0) {
           this.percentage = parseInt((constTime - time) / constTime * 100)
         }
@@ -45,7 +48,6 @@ export default {
       }, 1000)
     },
     resultFormat (result) {
-      // var h = Math.floor(result / 3600 % 24)
       var m = Math.floor(result / 60 % 60)
       var s = Math.floor(result % 60)
       return `${m}分${s}秒`
@@ -61,6 +63,7 @@ export default {
   display: flex;
   align-items: center;
   /deep/ .timeBar {
+    padding: 0 20px;
     flex: 1;
     .el-progress-bar__innerText {
       color: black;

@@ -1,8 +1,5 @@
 <template>
   <div class="audio">
-    <audio controls="controls" style="display: none" ref="audio">
-      <source :src="audioLink" type="audio/mp3" />
-    </audio>
     <div @click="audioClick" class="con">
       <div class="status">
         <img v-if="status" src="../assets/play.png" alt="play">
@@ -10,6 +7,9 @@
       </div>
       <slot></slot>
     </div>
+    <audio controls="controls" ref="audio">
+      <source :src="audioLink" type="audio/mp3" />
+    </audio>
   </div>
 </template>
 
@@ -58,8 +58,11 @@ export default {
 .audio {
   margin-top: 30px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  audio {
+    outline: none;
+  }
 }
 .con {
   background-color: gray;
@@ -69,6 +72,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
   .status {
     display: inline-block;
     img {
