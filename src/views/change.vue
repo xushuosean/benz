@@ -10,7 +10,7 @@
             src="../assets/pic1.png"
             :preview-src-list="srcList">
           </el-image>
-          <el-audio audioLink="../assets/hello.m4a">
+          <el-audio audioLink="https://music.163.com/#/song?id=29095562">
             <div class="audiobox">
               录音
             </div>

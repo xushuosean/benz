@@ -8,7 +8,7 @@
       <slot></slot>
     </div>
     <audio controls="controls" ref="audio">
-      <source :src="audioLink" type="audio/m4a" />
+      <source :src="audioLink" type="audio/mp3" />
     </audio>
   </div>
 </template>
