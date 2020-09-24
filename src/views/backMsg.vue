@@ -33,7 +33,7 @@ export default {
         fluid: true, // 当true时，Video.js player将拥有流体大小。换句话说，它将按比例缩放以适应其容器。
         sources: [{
           type: 'video/mp4', // 类型
-          src: 'https://ddileaf-test-report-pdf.oss-cn-shanghai.aliyuncs.com/tmp/MercedesBenz/1600913707999013.mp4?Expires=1600917386&OSSAccessKeyId=TMP.3KgxMGP4DHHpse89RN72EBdPE8xwSKzBqveQpwDwCZHKdVYZZuzkkQXv3rEZoUdt8M7HDianyko7bDswsuNQwcF8fcv8Uz&Signature=LFhPcNzuYtodnAdOZ%2FKpBqEyu5Y%3D&versionId=CAEQFhiBgIDdpsr3pRciIDI3NWMyZWRmNDBhOTQzYTI4YTI1YzJmNDAyZGUxNTNi&response-content-type=application%2Foctet-stream' // url地址
+          src: 'https://ddileaf-test-report-pdf.oss-cn-shanghai.aliyuncs.com/tmp/MercedesBenz/1600913707999013.mp4' // url地址
         }],
         poster: '', // 封面地址
         notSupportedMessage: '此视频暂无法播放，请稍后再试', // 允许覆盖Video.js无法播放媒体源时显示的默认信息。
