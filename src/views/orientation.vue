@@ -1,7 +1,10 @@
 <template>
   <div class="orientation">
     <div class="title">
-      <div class="text">欢迎来到梅赛德斯奔驰-经销商管理层目标选才中心</div>
+      <div class="text">
+        <p>欢迎来到梅赛德斯奔驰-经销商管理层</p>
+        <p>目标选才中心</p>
+      </div>
     </div>
     <div class="content">
       <div class="left">

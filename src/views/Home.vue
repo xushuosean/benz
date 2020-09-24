@@ -2,7 +2,7 @@
   <div class="home">
     <div class="bar">
       <div class="timeBar">
-        <el-progress v-show="progressShow" :text-inside="true" :format="format" :stroke-width="26" :percentage="percentage" color="gray"></el-progress>
+        <el-progress v-show="progressShow" :text-inside="true" :format="format" :stroke-width="26" :percentage="percentage"></el-progress>
       </div>
       <img src="../assets/logo.png" alt="">
     </div>

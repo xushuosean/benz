@@ -10,7 +10,7 @@
           <p>您已经完成全面测评。</p>
           <p>请点击<b>完成</b>按钮退出。</p>
         </div>
-        <el-button type="primary">完成</el-button>
+        <el-button type="primary" @click="done">完成</el-button>
       </div>
     </div>
   </div>
@@ -18,7 +18,11 @@
 
 <script>
 export default {
-
+  methods: {
+    done () {
+      this.$router.push('/home/orientation')
+    }
+  }
 }
 </script>
 
