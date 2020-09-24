@@ -10,7 +10,7 @@
             :preview-src-list="srcList">
           </el-image>
           <img src="../assets/pic1.png" alt="" style="display: none">
-          <el-audio audioLink="../assets/hello.m4a">
+          <el-audio audioLink="https://s19.aconvert.com/convert/p3r68-cdx67/o2r0z-wwi6l.mp3">
             <div class="audiobox">
               录音
             </div>
