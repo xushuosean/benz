@@ -15,7 +15,7 @@ export default {
   name: 'Home',
   data () {
     return {
-      percentage: 0,
+      percentage: 6,
       format: () => null,
       timer: null
     }
@@ -42,7 +42,9 @@ export default {
           clearInterval(this.timer)
         }
         if (time % 10 === 0) {
-          this.percentage = parseInt((constTime - time) / constTime * 100)
+          if (parseInt((constTime - time) / constTime * 100) > 6) {
+            this.percentage = parseInt((constTime - time) / constTime * 100)
+          }
         }
         this.format = () => this.resultFormat(time)
       }, 1000)
